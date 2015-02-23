@@ -1,4 +1,5 @@
 body {
+  background-color: #FFDEAD;
   padding-top: 50px;
 }
 .starter-template {
@@ -8,16 +9,22 @@ body {
 
 /*Navigation*/
 .navbar-inverse {
-background-color: #CA5122;
-border-color: #38220E;
+  background-color: #CA5122;
+  border-color: #38220E;
 }
 .navbar-inverse .navbar-brand {
-color: #fff;
+  color: #fff;
 }
 .navbar-inverse .navbar-nav>li>a {
-color: #fff;
+  color: #fff;
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
-color: #fff;
-background-color: transparent;
+  color: #fff;
+  background-color: transparent;
+}
+
+/* Biographies Styles */
+.biographies img {
+  float: left;
+  padding-right: 15px;
 }
