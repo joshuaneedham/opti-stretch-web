@@ -1,5 +1,7 @@
 body {
-  background-color: #FFDEAD;
+  /*background-color: #FFDEAD;*/
+  background-image: url('/images/site-background.jpg');
+  background-repeat: repeat-x;
   padding-top: 50px;
 }
 .starter-template {
@@ -21,6 +23,11 @@ body {
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
   color: #fff;
   background-color: transparent;
+}
+
+/* Page Header Style */
+.page-header img {
+  width: 100%;
 }
 
 /* Biographies Styles */
