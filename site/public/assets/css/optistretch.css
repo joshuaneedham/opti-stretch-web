@@ -1,0 +1,156 @@
+img {
+    max-width:100%;
+    height:auto;
+}
+body {
+    background:#ffdead url('../images/site-background.jpg') repeat-x;
+    padding-top: 50px;
+}
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
+.center {
+    text-align: center;
+}
+/*Navigation*/
+.navbar-inverse {
+    background-color: #CA5122;
+    border-color: #38220E;
+}
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: transparent;
+}
+#page-heading {
+    text-align:center;
+    min-height:200px;
+    background:#8d3f00 url('../images/header.png') no-repeat 50% 0;
+    margin-bottom:30px;
+    box-shadow:0px 2px 4px #000;
+}
+#page-heading a.home-link {
+    position: relative;
+    top:45px;
+    display:block;
+    width:482px;
+    height:110px;
+    background:transparent url('../images/logo.png') no-repeat;
+    overflow:hidden;
+    text-indent:-999em;
+    margin:0 auto;
+}
+
+/** FP Left Sidebar **/
+#fp-purchase-book-wrap {
+    background:transparent url('../images/fp-purchase.jpg') no-repeat;
+    width:260px;
+    height:243px;
+    padding:10px;
+    border-radius:3px;
+    box-shadow:1px 2px 4px #000;
+    margin-bottom:30px;
+}
+#fp-common-back-pain-wrap {
+    background:#d6572f url('../images/fp-common-back-pain-bg.jpg') repeat-x;
+    border-radius:3px;
+    box-shadow:1px 2px 4px #000;
+    color:#fff;
+    text-align:center;
+    position: relative;
+}
+#fp-purchase-book-bottom,
+#fp-purchase-book-top {
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    text-indent: -999em;
+}
+#fp-purchase-book-top {
+    width: 181px;
+    height: 30px;
+    top:8px;
+    left:23px;
+}
+#fp-purchase-book-bottom {
+    width: 113px;
+    height: 33px;
+    top:195px;
+    left:142px;
+}
+#fp-common-back-pain-img {
+    background:transparent url('../images/fp-common-back-pain.jpg') no-repeat;
+    position: relative;
+    min-height:265px;
+    font-size:1.2rem;
+    text-shadow: 1px 1px 2px #000;
+}
+#fp-common-back-pain-img .fp-common-instruct {
+    position:absolute;
+    bottom:10px;
+}
+#fp-common-back-pain-img span.ttip {
+    position: absolute;
+    display: block;
+    width: 9px;
+    height: 9px;
+    overflow: hidden;
+    cursor: pointer;
+    background: transparent url('../images/fp-dot.png') no-repeat;
+}
+.fp-common-instruct {
+    padding:0 1rem;
+}
+#span1 {
+    top:58px;
+    left:112px;
+}
+#span2 {
+    top:92px;
+    left:118px;
+}
+#span3 {
+    top:169px;
+    left:133px;
+}
+#span4 {
+    top:172px;
+    left:109px;
+}
+#span5 {
+    top:178px;
+    left:125px;
+}
+#span6 {
+    top:193px;
+    left:82px;
+}
+/** fp body content **/
+.body-content {
+    background:#fff url('../images/fp-mid-back.jpg') repeat-x;
+    border-radius:3px;
+    box-shadow:1px 2px 4px #000;
+}
+#dandb {
+    width:66px;
+    margin:10px auto;
+}
+.highlight {
+    color:#c92100;
+}
+.fp-main h1 {
+    font-weight: bold;
+    margin-bottom:0;
+}
+.fp-main h2 {
+    font-weight: bold;
+    margin-top:0;
+}
