@@ -1,7 +1,9 @@
 <div class="col-md-3 fp-left">
 	<div id="fp-purchase-book-wrap" class="fp-left-item">
-		<a href="#" id="fp-purchase-book-top">Purchase Our Book</a>
-		<a href="#" id="fp-purchase-book-bottom">Purchase Our Book</a>
+		<div id="fp-purchase-book-img">
+			<a href="#" id="fp-purchase-book-top">Purchase Our Book</a>
+			<a href="#" id="fp-purchase-book-bottom">Purchase Our Book</a>
+		</div>
 	</div>
 	<div id="fp-common-back-pain-wrap" class="fp-left-item">
 		<div id="fp-common-back-pain-img">

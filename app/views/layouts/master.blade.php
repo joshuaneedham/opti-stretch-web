@@ -45,7 +45,7 @@
     @include('partials.navbar')
     @section('pageheading')
         <section id="page-heading">
-            <a href="/" class="home-link" title="Opti-Stretch - Home">Opti-Stretch Home</a>
+            <a href="/" class="home-link" title="Opti-Stretch - Home"><img src="/assets/images/logo.png" class="page-logo"></a>
         </section>
     @show
     @include('partials.notifications')
