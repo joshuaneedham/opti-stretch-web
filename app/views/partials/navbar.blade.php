@@ -7,16 +7,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">Opti-Stretch</a>
+            <a class="navbar-brand" href="/">Opti-Stretch</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="company-overview.html">Company Overview</a></li>
-                <li><a href="biographies.html">Biographies</a></li>
-                <li><a href="in-the-media.html">In The Media</a></li>
-                <li><a href="frequently-asked-questions.html">FAQ's</a></li>
-                <li><a href="knowledge-base.html">Knowledge Base</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="company-overview">Company Overview</a></li>
+                <li><a href="biographies">Biographies</a></li>
+                <li><a href="in-the-media">In The Media</a></li>
+                <li><a href="frequently-asked-questions">FAQ's</a></li>
+                <li><a href="knowledge-base">Knowledge Base</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>

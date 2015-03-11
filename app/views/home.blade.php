@@ -5,8 +5,8 @@
 @section('content')
 	<div class="container content-wrap">
 		<div class="row">
-		@include('partials.frontleft')
-		<div class="col-md-6 body-content fp-main">
+			@include('partials.frontleft')
+		<div class="col-md-9 body-content fp-main">
 			<h1 class="center">OPTI-STRETCH</h1>
 			<h2 class="center">Versus Recurrent Back Pain</h2>
 			<p class="highlight center">Have you ever injured a muscle and it never felt the same again?</p>
@@ -29,7 +29,6 @@
 			 	style="padding: 0; outline: 0; border: 0 none; clear: both;
 			 	vertical-align: baseline; display: block;" alt="D&amp;B Credibility Basic"></div>
 		</div>
-		@include('partials.frontright')
 		</div>
 	</div>
 @stop

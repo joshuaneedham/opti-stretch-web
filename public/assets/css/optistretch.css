@@ -5,6 +5,31 @@ img {
 body {
     background:#ffdead url('../images/site-background.jpg') repeat-x;
     padding-top: 50px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding-bottom:3rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size:120%;
+    font-weight: bold;
+    font-family: "futura-pt-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1 {
+    font-size:285%;
+}
+h2 {
+    font-size:250%;
+}
+h3 {
+    font-size:235%;
+}
+h4 {
+    font-size:200%;
+}
+h5 {
+    font-size:185%;
+}
+h6 {
+    font-size:150%;
 }
 .left {
     text-align: left;
@@ -14,6 +39,9 @@ body {
 }
 .center {
     text-align: center;
+}
+.underline {
+    text-decoration: underline;
 }
 /*Navigation*/
 .navbar-inverse {
@@ -92,6 +120,7 @@ body {
     min-height:265px;
     font-size:1.2rem;
     text-shadow: 1px 1px 2px #000;
+    border-radius: 3px;
 }
 #fp-common-back-pain-img .fp-common-instruct {
     position:absolute;
@@ -105,6 +134,11 @@ body {
     overflow: hidden;
     cursor: pointer;
     background: transparent url('../images/fp-dot.png') no-repeat;
+}
+.bio-image {
+    float:left;
+    margin-right:1rem;
+    margin-bottom:1rem;
 }
 .fp-common-instruct {
     padding:0 1rem;
@@ -138,6 +172,7 @@ body {
     background:#fff url('../images/fp-mid-back.jpg') repeat-x;
     border-radius:3px;
     box-shadow:1px 2px 4px #000;
+    min-height:538px;
 }
 #dandb {
     width:66px;
@@ -153,4 +188,20 @@ body {
 .fp-main h2 {
     font-weight: bold;
     margin-top:0;
+}
+#footer-separator {
+    clear:both;
+    display: block;
+    height:15px;
+    border-bottom:1px solid #38220E;
+    box-shadow: 0 8px 15px #38220E;
+    background: #CA5122;
+    margin:5rem 0 2rem 0;
+}
+#pagefooter {
+    clear:both;
+    margin-top:1rem;
+}
+.article-start {
+    margin-top:1rem;
 }
