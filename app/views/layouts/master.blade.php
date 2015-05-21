@@ -41,7 +41,7 @@
     <link rel="stylesheet" href="/assets/css/optistretch.css">
     @show
     <head>
-    <body>
+    <body data-spy="scroll">
     @include('partials.navbar')
     @section('pageheading')
         <section id="page-heading">

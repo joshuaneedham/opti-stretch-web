@@ -8,4 +8,9 @@ class User extends Eloquent implements ConfideUserInterface
   use ConfideUser;
   use HasRole;
 
+  public function transaction()
+  {
+  	return $this->hasMany('Transaction', 'user_id', 'id');
+  }
+
 }

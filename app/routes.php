@@ -30,3 +30,75 @@ Route::get('/frequently-asked-questions', function(){
 Route::get('/knowledge-base', function(){
 	return View::make('kb');
 });
+
+Route::get('/purchase', ['before' => ['auth'], function(){
+	return View::make('purchase');
+}]);
+
+Route::get('/book/{id?}', ['before' => ['auth', 'subscription'], function($id = '000'){
+	$bookpage = file_get_contents(app_path() . '/bookpages/bp_' . $id . '.htm');
+	$previous = null;
+	$next = null;
+	if (file_exists(app_path() . '/bookpages/bp_' . str_pad($id - 1, 3, '0', STR_PAD_LEFT) . '.htm')) {
+		$previous = str_pad($id - 1, 3, '0', STR_PAD_LEFT);
+	}
+	if (file_exists(app_path() . '/bookpages/bp_' . str_pad($id + 1, 3, '0', STR_PAD_LEFT) . '.htm')) {
+		$next = str_pad($id + 1, 3, '0', STR_PAD_LEFT);
+	}
+	return View::make('book.bookpage')
+		->with('bookpage', $bookpage)
+		->with('previous', $previous)
+		->with('next', $next);
+}]);
+//
+Route::get('checkenv', function(){
+	return App::environment();
+});
+// Confide routes
+Route::get('users/create', 'UsersController@create');
+Route::post('users', 'UsersController@store');
+Route::get('users/login', 'UsersController@login');
+Route::post('users/login', 'UsersController@doLogin');
+Route::get('users/confirm/{code}', 'UsersController@confirm');
+Route::get('users/forgot_password', 'UsersController@forgotPassword');
+Route::post('users/forgot_password', 'UsersController@doForgotPassword');
+Route::get('users/reset_password/{token}', 'UsersController@resetPassword');
+Route::post('users/reset_password', 'UsersController@doResetPassword');
+Route::get('users/logout', 'UsersController@logout');
+
+
+Route::get('/populate-roles', function(){
+	//Abort creation - comment next line
+	//to repopulate the roles and permissions if resetting/deploying for the first time.
+	return 'Already done.';
+
+	$administrator = new Role();
+	$administrator->name = "Administrator";
+	$administrator->save();
+
+	$subscriber = new Role();
+	$subscriber->name = "Subscriber";
+	$subscriber->save();
+
+	$read = new Permission();
+	$read->name = 'can_read_book';
+	$read->display_name = "Can read eBook pages";
+	$read->save();
+
+	$video = new Permission();
+	$video->name = 'can_view_video';
+	$video->display_name = 'Can view videos';
+	$video->save();
+
+	$administrator->attachPermission($read);
+	$administrator->attachPermission($video);
+
+	$subscriber->attachPermission($read);
+	$subscriber->attachPermission($video);
+	
+	$user1 = User::find(1);
+	$user1->attachRole($subscriber);
+
+	return 'Created Roles and Permissions.';
+
+});

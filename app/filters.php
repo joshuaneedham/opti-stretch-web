@@ -43,7 +43,7 @@ Route::filter('auth', function()
 		}
 		else
 		{
-			return Redirect::guest('login');
+			return Redirect::guest('users/login');
 		}
 	}
 });
@@ -67,7 +67,7 @@ Route::filter('auth.basic', function()
 
 Route::filter('guest', function()
 {
-	if (Auth::check()) return Redirect::to('/');
+	if (Auth::check()) return Redirect::to('users/login');
 });
 
 /*
@@ -87,4 +87,15 @@ Route::filter('csrf', function()
 	{
 		throw new Illuminate\Session\TokenMismatchException;
 	}
+});
+
+Route::filter('subscription', function()
+{
+
+	$user = Auth::user();
+	if (!$user->ability(['Administrator', 'Subscriber'], ['can_read_book', 'can_view_video']))
+	{
+		return Redirect::to('purchase');
+	}
+
 });

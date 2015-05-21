@@ -3,7 +3,7 @@ img {
     height:auto;
 }
 body {
-    background:#ffdead url('../images/site-background.jpg') repeat-x;
+    background:#f9a750 url('../images/site-background.jpg') repeat-x;
     padding-top: 50px;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     padding-bottom:3rem;
@@ -215,3 +215,62 @@ h6 {
 .article-start {
     margin-top:1rem;
 }
+
+
+
+.btn-primary {
+  background-color: #CA5122;
+  border-color: #CA5122;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #b4481e;
+  border-color: #9e3f1b;
+}
+.btn-primary.disabled:hover,
+.btn-primary.disabled:focus,
+.btn-primary.disabled:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled]:hover,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled]:active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary:hover,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .btn-primary:active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #CA5122;
+  border-color: #CA5122;
+}
+
+.btn-inset {
+  background-color: #db5927;
+  border-color: #531b05;
+  color:#f3c5b3;
+}
+.btn-inset:hover,
+.btn-inset:focus,
+.btn-inset:active,
+.btn-inset.active {
+  background-color: #da673b;
+  border-color: #531b05;
+  color:#fff;
+}
+.btn-inset.disabled:hover,
+.btn-inset.disabled:focus,
+.btn-inset.disabled:active,
+.btn-inset.disabled.active,
+.btn-inset[disabled]:hover,
+.btn-inset[disabled]:focus,
+.btn-inset[disabled]:active,
+.btn-inset[disabled].active,
+fieldset[disabled] .btn-inset:hover,
+fieldset[disabled] .btn-inset:focus,
+fieldset[disabled] .btn-inset:active,
+fieldset[disabled] .btn-inset.active {
+  background-color: #da673b;
+  border-color: #531b05;
+}
+
