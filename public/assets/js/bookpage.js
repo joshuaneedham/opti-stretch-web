@@ -29,4 +29,14 @@
 	$(window).scroll(function(){
 		header_sticker();
 	});
+	var playerWidth = $('.section-break').width();
+	console.log(playerWidth);
+	var playerHeight = Math.round((playerWidth/16)*9);
+	$('video').mediaelementplayer({
+		videoWidth: playerWidth,
+		videoHeight: playerHeight,
+		features: ['playpause','progress','current','duration','tracks','volume','fullscreen'],
+		alwaysShowControls: true,
+		pauseOtherPlayer: true
+	});
 })(jQuery);

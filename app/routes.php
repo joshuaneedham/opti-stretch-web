@@ -30,12 +30,19 @@ Route::get('/frequently-asked-questions', function(){
 Route::get('/knowledge-base', function(){
 	return View::make('kb');
 });
+Route::get('/classes', function(){
+	return View::make('classes');
+});
+Route::get('/testimonials', function(){
+	return View::make('testimonials');
+});
 
-Route::get('/purchase', ['before' => ['auth'], function(){
+Route::get('/purchase', function(){
 	return View::make('purchase');
-}]);
+});
 
 Route::get('/book/{id?}', ['before' => ['auth', 'subscription'], function($id = '000'){
+//Route::get('/book/{id?}', function($id = '000'){
 	$bookpage = file_get_contents(app_path() . '/bookpages/bp_' . $id . '.htm');
 	$previous = null;
 	$next = null;
@@ -50,6 +57,7 @@ Route::get('/book/{id?}', ['before' => ['auth', 'subscription'], function($id = 
 		->with('previous', $previous)
 		->with('next', $next);
 }]);
+//	});
 //
 Route::get('checkenv', function(){
 	return App::environment();
@@ -95,9 +103,10 @@ Route::get('/populate-roles', function(){
 
 	$subscriber->attachPermission($read);
 	$subscriber->attachPermission($video);
-	
+
 	$user1 = User::find(1);
 	$user1->attachRole($subscriber);
+	$user1->attachRole($administrator);
 
 	return 'Created Roles and Permissions.';
 

@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://optistretch.powersyou.com',
+	'url' => 'http://www.optistretch.com',
 
 	/*
 	|--------------------------------------------------------------------------

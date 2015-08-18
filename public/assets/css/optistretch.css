@@ -273,4 +273,10 @@ fieldset[disabled] .btn-inset.active {
   background-color: #da673b;
   border-color: #531b05;
 }
-
+/* Sales Page Styles */
+.android-badge {
+    padding: 10px;
+}
+.apple-badge {
+    padding: 10px;
+}

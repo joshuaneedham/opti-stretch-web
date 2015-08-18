@@ -15,7 +15,9 @@
                 <li class="{{ Request::segment(1) == 'company-overview' ? 'active' : '' }}"><a href="/company-overview">Company Overview</a></li>
                 <li class="{{ Request::segment(1) == 'biographies' ? 'active' : '' }}"><a href="/biographies">Biographies</a></li>
                 <li class="{{ Request::segment(1) == 'in-the-media' ? 'active' : '' }}"><a href="/in-the-media">In The Media</a></li>
-                <li class="{{ Request::segment(1) == 'frequently-asked-questions' ? 'active' : '' }}"><a href="frequently-asked-questions">FAQ's</a></li>
+                <li class="{{ Request::segment(1) == 'frequently-asked-questions' ? 'active' : '' }}"><a href="/frequently-asked-questions">FAQ's</a></li>
+                <li class="{{ Request::segment(1) == 'classes' ? 'active' : '' }}"><a href="/classes">Classes</a></li>
+                <li class="{{ Request::segment(1) == 'testimonials' ? 'active' : '' }}"><a href="/testimonials">Testimonials</a></li>
                 <li class="{{ Request::segment(1) == 'knowledge-base' ? 'active' : '' }}"><a href="/knowledge-base">Knowledge Base</a></li>
                 @if (Auth::guest())
                 <li class="{{ Request::segment(1) == 'users' ? 'active' : '' }}"><a href="/users/login">Login/Signup</a></li>

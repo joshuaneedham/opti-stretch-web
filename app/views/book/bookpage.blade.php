@@ -3,6 +3,12 @@
 @parent
 <link rel="stylesheet" href="/assets/css/bookpages.css">
 @stop
+@section('headscripts')
+@parent
+<script src="/assets/mediaelementjs/mediaelement-and-player.min.js"></script>
+<link rel="stylesheet" href="/assets/mediaelementjs/mediaelementplayer.min.css">
+@stop
+
 @section('title')@parent:: Book @stop
 
 @section('content')
