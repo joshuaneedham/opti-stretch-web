@@ -36,6 +36,9 @@ Route::get('/classes', function(){
 Route::get('/testimonials', function(){
 	return View::make('testimonials');
 });
+Route::get('/contact-us', function(){
+	return View::make('contact');
+});
 
 Route::get('/purchase', function(){
 	return View::make('purchase');
@@ -57,11 +60,11 @@ Route::get('/book/{id?}', ['before' => ['auth', 'subscription'], function($id = 
 		->with('previous', $previous)
 		->with('next', $next);
 }]);
-//	});
-//
+
 Route::get('checkenv', function(){
 	return App::environment();
 });
+
 // Confide routes
 Route::get('users/create', 'UsersController@create');
 Route::post('users', 'UsersController@store');

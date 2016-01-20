@@ -1,9 +1,14 @@
 <div class="col-md-3 fp-left">
 	<div id="fp-purchase-book-wrap" class="fp-left-item">
-		<div id="fp-purchase-book-img">
+		{{--<div id="fp-purchase-book-img">
 			<a href="/purchase" id="fp-purchase-book-top">Purchase Our Book</a>
 			<a href="/purchase" id="fp-purchase-book-bottom">Purchase Our Book</a>
-		</div>
+		</div>--}}
+		@if (!Auth::guest() && Auth::user()->can('can_read_book'))
+		<a href="/book" id="fp-purchase-book-lnk"><img src="/assets/images/fp-book-access.jpg" alt="Read the Book Online" /></a>
+		@else
+		<a href="/purchase" id="fp-purchase-book-lnk"><img src="/assets/images/fp-purchase.jpg" alt="Purchase our Book" /></a>
+		@endif
 	</div>
 	<div id="fp-common-back-pain-wrap" class="fp-left-item">
 		<div id="fp-common-back-pain-img">

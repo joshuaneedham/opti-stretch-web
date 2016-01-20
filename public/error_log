@@ -1,3 +1,18 @@
 [30-May-2015 21:13:42 UTC] PHP Warning:  require(/home/optistretch/opti-stretch-web/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /home/optistretch/opti-stretch-web/bootstrap/autoload.php on line 17
 [30-May-2015 21:13:42 UTC] PHP Fatal error:  require(): Failed opening required '/home/optistretch/opti-stretch-web/bootstrap/../vendor/autoload.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/optistretch/opti-stretch-web/bootstrap/autoload.php on line 17
 [03-Jun-2015 04:22:49 UTC] PHP Parse error:  syntax error, unexpected ']' in /home/optistretch/opti-stretch-web/app/routes.php on line 53
+[08-Dec-2015 00:41:00 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/optistretch/opti-stretch-web/app/storage/views/aadb999adf4fe8a136eee3f9da5f212b on line 26
+[08-Dec-2015 00:41:14 UTC] PHP Parse error:  syntax error, unexpected '''' (T_CONSTANT_ENCAPSED_STRING) in /home/optistretch/opti-stretch-web/app/storage/views/aadb999adf4fe8a136eee3f9da5f212b on line 27
+[08-Dec-2015 00:49:39 UTC] PHP Fatal error:  Call to a member function can() on a non-object in /home/optistretch/opti-stretch-web/app/storage/views/aadb999adf4fe8a136eee3f9da5f212b on line 15
+[08-Dec-2015 00:49:44 UTC] PHP Fatal error:  Call to a member function can() on a non-object in /home/optistretch/opti-stretch-web/app/storage/views/aadb999adf4fe8a136eee3f9da5f212b on line 15
+[08-Dec-2015 00:56:04 UTC] PHP Fatal error:  Call to a member function can() on a non-object in /home/optistretch/opti-stretch-web/app/storage/views/aadb999adf4fe8a136eee3f9da5f212b on line 15
+[08-Dec-2015 01:03:47 UTC] PHP Fatal error:  Call to a member function can() on a non-object in /home/optistretch/opti-stretch-web/app/storage/views/aadb999adf4fe8a136eee3f9da5f212b on line 15
+[08-Dec-2015 01:09:59 UTC] PHP Fatal error:  Call to a member function can() on a non-object in /home/optistretch/opti-stretch-web/app/storage/views/aadb999adf4fe8a136eee3f9da5f212b on line 15
+[08-Dec-2015 01:12:01 UTC] PHP Fatal error:  Call to a member function can() on a non-object in /home/optistretch/opti-stretch-web/app/storage/views/aadb999adf4fe8a136eee3f9da5f212b on line 15
+[08-Dec-2015 01:12:57 UTC] PHP Fatal error:  Call to a member function can() on a non-object in /home/optistretch/opti-stretch-web/app/storage/views/aadb999adf4fe8a136eee3f9da5f212b on line 15
+[08-Dec-2015 01:15:02 UTC] PHP Fatal error:  Call to a member function can() on a non-object in /home/optistretch/opti-stretch-web/app/storage/views/aadb999adf4fe8a136eee3f9da5f212b on line 15
+[08-Dec-2015 01:20:05 UTC] PHP Fatal error:  Call to a member function can() on a non-object in /home/optistretch/opti-stretch-web/app/storage/views/aadb999adf4fe8a136eee3f9da5f212b on line 15
+[08-Dec-2015 01:20:06 UTC] PHP Fatal error:  Call to a member function can() on a non-object in /home/optistretch/opti-stretch-web/app/storage/views/aadb999adf4fe8a136eee3f9da5f212b on line 15
+[08-Dec-2015 01:26:01 UTC] PHP Fatal error:  Call to a member function can() on a non-object in /home/optistretch/opti-stretch-web/app/storage/views/aadb999adf4fe8a136eee3f9da5f212b on line 15
+[08-Dec-2015 01:26:01 UTC] PHP Fatal error:  Call to a member function can() on a non-object in /home/optistretch/opti-stretch-web/app/storage/views/aadb999adf4fe8a136eee3f9da5f212b on line 15
+[08-Dec-2015 01:26:03 UTC] PHP Fatal error:  Call to a member function can() on a non-object in /home/optistretch/opti-stretch-web/app/storage/views/aadb999adf4fe8a136eee3f9da5f212b on line 15
